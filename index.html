@@ -49,6 +49,30 @@
       img {
         width: 100%;
         height: auto;
+        border-radius: 10px;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      .grid-img {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+      }
+
+      .grid-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .grid-img img:hover {
+        transform: scale(4);
+        transition: transform 600ms ease-in-out;
       }
 
       button {
@@ -89,22 +113,24 @@
         src="https://hudsonriverpark.org/app/uploads/2022/06/941A3280.jpg-Sunset-Salsa-Pier-76-1440x960.jpg"
         alt="Dance salsa"
       />
-      <img
-        src="https://i0.wp.com/charlestoncitypaper.com/wp-content/uploads/2023/09/HCSparty2022-099.jpg?fit=1200%2C801&ssl=1"
-        alt="Dance salsa"
-      />
-      <img
-        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1e/c3/76/salsabor-a-cuba-bailando.jpg?w=1200&h=-1&s=1"
-        alt="Dance salsa"
-      />
-      <img
-        src="https://www.tampabay.com/resizer/v2/myra-rivera-and-daniel-gordon-dance-ILAKWXB5G5BWFC3HXUYEJS26V4.JPG?auth=325647a4573b5f682fe6aaee6c87699a19cb08d23e3cdc2161885720e97d8ac7&height=506&width=900&smart=true"
-        alt="Dance salsa"
-      />
-      <img
-        src="https://www.tampabay.com/resizer/v2/kayla-meza-30-and-kevin-hernandez-27-YKBY4HURLJFI5N6VW5I2YYVD7Q.JPG?auth=5c5e806b84cb119006a85e8deb8422c9c8c6706d0384e1af9cb8613c70fd96c5&width=620"
-        alt="Dance salsa"
-      />
+      <div class="grid-img">
+        <img
+          src="https://i0.wp.com/charlestoncitypaper.com/wp-content/uploads/2023/09/HCSparty2022-099.jpg?fit=1200%2C801&ssl=1"
+          alt="Dance salsa"
+        />
+        <img
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1e/c3/76/salsabor-a-cuba-bailando.jpg?w=1200&h=-1&s=1"
+          alt="Dance salsa"
+        />
+        <img
+          src="https://prattst.com/wp-content/uploads/2022/04/ZFTSI2UWNJFMTIEZYC5UABAHBU.jpeg"
+          alt="Dance salsa"
+        />
+        <img
+          src="https://www.tampabay.com/resizer/v2/kayla-meza-30-and-kevin-hernandez-27-YKBY4HURLJFI5N6VW5I2YYVD7Q.JPG?auth=5c5e806b84cb119006a85e8deb8422c9c8c6706d0384e1af9cb8613c70fd96c5&width=620"
+          alt="Dance salsa"
+        />
+      </div>
       <a
         href="https://www.youtube.com/watch?time_continue=3&v=C4MAFLeWY7c&embeds_referring_euri=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dsalsa%2Bbasics%2Bdance%26rlz%3D1C5CHFA_enIE767IE767%26oq%3Dsalsa%2Bbasics%2Bdance%26gs_lcrp%3DEgZjaHJvbWUyBggAEEUYOT&source_ve_path=Mjg2NjY"
         target="blank"
