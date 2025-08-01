@@ -6,8 +6,8 @@
     <title>I Love Salsa</title>
     <style>
       body {
-        background-color: plum;
-      }
+        background-color: white;     
+     }
 
       .theme-button {
         font-size: 15px;
@@ -20,6 +20,15 @@
         background-color: white;
         color: black;
         cursor: pointer;
+      }
+
+      .dark {
+        background-color: black;
+        color: white;
+      }
+
+      .dark .container {
+        background-color: rgba(255, 255, 255, 0.1);
       }
 
       .container {
@@ -92,8 +101,9 @@
         margin: 10px 0;
         font-size: 18px;
       }
+
     </style>
-    <button class="theme-button">Dark Theme</button>
+    <button class="theme-button">Change Theme</button>
   </head>
   <body>
     <div class="container">
@@ -140,5 +150,19 @@
     </div>
 
     <footer>Coded with 💜 by Lais Zagati</footer>
+
+    <script>
+        function changeTheme() {
+            let body = document.querySelector('body');
+        
+            body.classList.toggle('dark'); {
+                
+            }
+        }
+
+        let themeButton = document.querySelector('.theme-button');
+        themeButton.addEventListener('click', changeTheme);
+
+    </script>
   </body>
 </html>
